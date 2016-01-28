@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2016 10:36:15 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="contoh" name="entities.Identitas" optimistic-lock="version" table="identitas">
+    <id name="id" type="int">
+      <column name="ID"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="firstName" type="string">
+      <column length="15" name="first_name"/>
+    </property>
+    <property name="lastName" type="string">
+      <column length="15" name="last_name"/>
+    </property>
+  </class>
+</hibernate-mapping>

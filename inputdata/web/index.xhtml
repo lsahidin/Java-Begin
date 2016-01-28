@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            Input Data
+            <hr></hr>
+            ID: <h:inputText value="#{dataController.id}"/><br></br>
+            First Name: <h:inputText value="#{dataController.firstname}"/><br></br>
+            Last Name: <h:inputText value="#{dataController.lastname}"/><br></br>
+        <h:commandButton value="link" action="#{dataController.sendLink()}"/>
+        </h:form>
+    </h:body>
+</html>
+

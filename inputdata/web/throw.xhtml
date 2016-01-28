@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>Lempar URL</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div>URL Throwed dude! :D</div>
+        <h:dataTable value="#{dataController.retrieveDataUser}" var="user">
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="No."/>
+                </f:facet>
+                <h:outputText value="#{user.id}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="First Name"/>
+                </f:facet>
+                <h:outputText value="#{user.firstName}"/>
+            </h:column> 
+            <h:column>
+                <f:facet name="header">
+                    <h:outputText value="Last Name"/>
+                </f:facet>
+                <h:outputText value="#{user.lastName}"/>
+            </h:column> 
+        </h:dataTable>
+        <br></br>
+        <a href="/inputdata">Back to the index</a>
+    </body>
+</html>

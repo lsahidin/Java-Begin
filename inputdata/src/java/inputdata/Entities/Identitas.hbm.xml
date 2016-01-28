@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2016 12:01:25 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="inputdata.Entities.Identitas" table="identitas" catalog="contoh" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="15" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>
